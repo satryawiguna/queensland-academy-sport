@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    src: url('/../fonts/Guthen Bloots Personal Use.ttf');
+    font-family: "guthen-bloots";
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-w-570 {
+    width: 570px;
+}
+
+.bg-curtis {
+    background: url('../assets/curtis.png'), #009ac6;
+    background-size: cover;
+}
+
+.bg-abby {
+    background: url('../assets/abby.png'), #fdcb26;
+    background-size: cover;
+}
+
+
+.bg-taliqua {
+    background: url('../assets/abby.png'), #ff0000;
+    background-size: cover;
+;
+}
+
+.mySwiper {
+    height: 250px;
+}
+
+.slide-item-wrapper {
+    width: 160px;
+}
+
+.slide-item {
+    height: 160px;
+    width: 100%;
+    padding: 10px;
+}
+
+.swiper-pagination-bullet {
+    background-color: #000000 !important;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #000000 !important;
+    font-size: 20px;
+    top: unset !important;
+    bottom: 0;
+}
+
+.swiper-button-next {
+    right: 40% !important;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%234c71ae'%2F%3E%3C%2Fsvg%3E") !important;
+}
+
+.swiper-button-prev {
+    left: 40% !important;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%234c71ae'%2F%3E%3C%2Fsvg%3E") !important;
+}
+
+@media (min-width:320px) and (max-width: 568px) {
+    .swiper-button-next {
+        right: 10% !important;
+    }
+
+    .swiper-button-prev {
+        left: 10% !important;
+    }
+}
+
+@media (min-width:768px) and (max-width: 1024px) {
+    .swiper-button-next {
+        right: 30% !important;
+    }
+
+    .swiper-button-prev {
+        left: 30% !important;
+    }
+}
+
+.circle-23 {
+    width: 65px;
+    height: 65px;
+}
