@@ -3,13 +3,13 @@
         <dt class="bg-black opacity-50 text-white text-left text-xl rounded p-4">
             <button @click="toggle" class="accordion-item-trigger">
                 <div class="flex flex-row gap-3">
-                    <div>
+                    <div class="opacity-100">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
                     </div>
                     <div class="text-left">
-                        <h4>{{item.title}}</h4>
+                        <h4 class="opacity-100 phone:text-sm">{{item.title}}</h4>
                     </div>
                 </div>
             </button>
@@ -21,7 +21,7 @@
             @before-leave="startTransition"
             @after-leave="endTransition">
             <dd v-if="item.active" class="flex flex-row bg-white p-4">
-                <div class="text-red font-bold mr-3">A.</div>
+                <div class="text-red font-bold mr-4">A.</div>
                 <div v-html="item.details" class="text-black text-left"></div>
             </dd>
         </transition>

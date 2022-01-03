@@ -2,7 +2,6 @@
     <div class="flex flex-row justify-center bg-no-repeat bg-cover bg-fixed py-20 bg-taliqua">
         <div class="flex flex-col text-center gap-2 basis-4/6">
             <h2 class="text-5.3xl font-bold font-Guthen text-white mb-5">FAQ</h2>
-
             <faq-item-component
                 v-for="item in content"
                 :multiple="multiple"
@@ -10,7 +9,6 @@
                 :groupId="groupId"
                 :key="item.id">
             </faq-item-component>
-
         </div>
     </div>
 </template>

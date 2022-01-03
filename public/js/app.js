@@ -5294,8 +5294,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
@@ -28310,7 +28308,7 @@ var render = function () {
             },
             [
               _c("div", { staticClass: "flex flex-row gap-3" }, [
-                _c("div", [
+                _c("div", { staticClass: "opacity-100" }, [
                   _c(
                     "svg",
                     {
@@ -28336,7 +28334,9 @@ var render = function () {
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "text-left" }, [
-                  _c("h4", [_vm._v(_vm._s(_vm.item.title))]),
+                  _c("h4", { staticClass: "opacity-100 phone:text-sm" }, [
+                    _vm._v(_vm._s(_vm.item.title)),
+                  ]),
                 ]),
               ]),
             ]
@@ -28358,7 +28358,7 @@ var render = function () {
         [
           _vm.item.active
             ? _c("dd", { staticClass: "flex flex-row bg-white p-4" }, [
-                _c("div", { staticClass: "text-red font-bold mr-3" }, [
+                _c("div", { staticClass: "text-red font-bold mr-4" }, [
                   _vm._v("A."),
                 ]),
                 _vm._v(" "),
